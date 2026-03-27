@@ -26,7 +26,7 @@ if df_patients.empty:
 render_header(
     title="Patient Census Directory",
     subtitle="Secure Records · Identity Verified",
-    icon="📂",
+    icon="",
     right_badge="ACCESS LOGGED",
     right_color=t["success"]
 )

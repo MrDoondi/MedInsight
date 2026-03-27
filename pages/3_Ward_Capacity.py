@@ -120,7 +120,7 @@ with st.sidebar:
 # ═══════════════════════════════════════════════════════════════
 # 5. HEADER & KPIs
 # ═══════════════════════════════════════════════════════════════
-render_header("Ward Capacity & Flow", f"Bed availability · Admissions · Discharges · {datetime.now().strftime('%d %b %Y, %I:%M %p')}", "🛏️", f"{occ_label} — {occupancy_pct}% OCCUPIED", occ_color)
+render_header("Ward Capacity & Flow", f"Bed availability · Admissions · Discharges · {datetime.now().strftime('%d %b %Y, %I:%M %p')}", "", f"{occ_label} — {occupancy_pct}% OCCUPIED", occ_color)
 
 k1, k2, k3, k4, k5, k6 = st.columns(6)
 render_kpi(k1, "Total Beds", str(total_beds), "hospital capacity", t["text"])

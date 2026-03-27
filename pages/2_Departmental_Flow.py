@@ -8,7 +8,7 @@ from components import setup_page, render_sidebar, render_kpi, render_header
 # ═══════════════════════════════════════════════════════════════
 # 1. PAGE CONFIG & SETUP
 # ═══════════════════════════════════════════════════════════════
-t = setup_page("Departmental Flow", "🏥", "flow")
+t = setup_page("Departmental Flow", "", "flow")
 chart_cfg = get_chart_config()
 render_sidebar("flow", "⬡")
 
@@ -31,7 +31,7 @@ live_util    = df_util[df_util["date"] == latest_date]
 render_header(
     title="Departmental Pulse & Flow", 
     subtitle=f"Institutional Intelligence Node · {latest_date}", 
-    icon="🏥", 
+    icon="", 
     right_badge=f"{len(live_util)} Wards Active", 
     right_color=t["info"]
 )

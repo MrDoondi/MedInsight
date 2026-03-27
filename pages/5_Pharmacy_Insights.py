@@ -122,7 +122,7 @@ avg_stock     = fdf["stock_quantity"].mean()
 render_header(
     title="Pharmacy & Inventory",
     subtitle=f"Stock & Expiry Management · {sel_category if sel_category != 'All' else 'All Categories'} · Threshold: {low_stock_limit} units",
-    icon="💊",
+    icon="",
     right_badge=f"{len(fdf):,} RECORDS",
     right_color=t["accent"],
 )

@@ -10,7 +10,7 @@ from styles import get_chart_config
 # ═══════════════════════════════════════════════════════════════
 t = setup_page("Institutional Overview", "🏥", "overview")
 chart_cfg = get_chart_config()
-render_sidebar("overview", "🏥")
+render_sidebar("overview", "")
 
 # ═══════════════════════════════════════════════════════════════
 # 2. DATA LOAD 
@@ -59,7 +59,7 @@ else:
 render_header(
     title="Institutional Overview",
     subtitle=f"Command Node · {live.get('date', 'Live')} · Status: Active",
-    icon="🏥",
+    icon="",
     right_badge=badge_text,
     right_color=risk_color
 )

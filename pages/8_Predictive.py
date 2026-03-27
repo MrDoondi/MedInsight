@@ -46,7 +46,7 @@ risk_color = t["critical"] if admission_risk == "CRITICAL" else t["warning"] if 
 render_header(
     title="Predictive Intelligence",
     subtitle=f"Nexus AI v2.4 Horizon Forecast · Next 7 Days",
-    icon="🔮",
+    icon="",
     right_badge=admission_risk,
     right_color=risk_color
 )

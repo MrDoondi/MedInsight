@@ -202,7 +202,7 @@ with st.sidebar:
 # ═══════════════════════════════════════════════════════════════
 # 6. HEADER & ACTION MESSAGES
 # ═══════════════════════════════════════════════════════════════
-render_header("Outpatient Operations", f"Live token tracking · {datetime.now().strftime('%d %b %Y, %I:%M %p')}", "🎫", f"{waiting_ct} WAITING", t["accent"])
+render_header("Outpatient Operations", f"Live token tracking · {datetime.now().strftime('%d %b %Y, %I:%M %p')}", "", f"{waiting_ct} WAITING", t["accent"])
 
 if st.session_state.queue_msg:
     msg_type, msg_text = st.session_state.queue_msg

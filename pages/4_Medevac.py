@@ -194,7 +194,7 @@ with st.sidebar:
 # ═══════════════════════════════════════════════════════════════
 # 5. PAGE HEADER & DISPATCH ALERTS
 # ═══════════════════════════════════════════════════════════════
-render_header("MedEvac Command", "Dispatch patients to network hospitals · Monitor live bed availability", "🚑", "TRANSFER & REROUTING HUB", t["accent"])
+render_header("MedEvac Command", "Dispatch patients to network hospitals · Monitor live bed availability", "", "TRANSFER & REROUTING HUB", t["accent"])
 
 if st.session_state.dispatch_msg:
     msg_type, msg_text = st.session_state.dispatch_msg
